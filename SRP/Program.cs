@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SRP
+namespace SRP // Single Responsible Prinsiple
 {
   class Program
   {
