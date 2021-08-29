@@ -2,15 +2,15 @@ namespace OCP
 {
   public class Alan
   {
-    private Dikdortgen _dikdortgen;
-    public Alan(Dikdortgen dikdortgen)
+    private Sekil _sekil;
+    public Alan(Sekil sekil)
     {
-      _dikdortgen = dikdortgen;
+      _sekil = sekil;
     }
 
     public double Hesapla()
     {
-      return _dikdortgen.KenarA * _dikdortgen.KenarB;
+      return _sekil.AlanHesapla();
     }
   }
 }

@@ -6,11 +6,16 @@ namespace OCP // Open - Closed Principle
   {
     static void Main(string[] args)
     {
-      Dikdortgen d = new Dikdortgen();
-      d.KenarA = 4;
-      d.KenarB = 5;
-      Alan alan = new Alan(d);
-      Console.WriteLine(alan.Hesapla());
+      Dikdortgen dikdortgen = new Dikdortgen();
+      dikdortgen.KenarA = 4;
+      dikdortgen.KenarB = 5;
+      Alan dikdortgenAlan = new Alan(dikdortgen);
+      Console.WriteLine("Dikdortgen alani: " + dikdortgenAlan.Hesapla());
+
+      Daire daire = new Daire();
+      daire.YariCap = 5;
+      Alan daireALan = new Alan(daire);
+      Console.WriteLine("Daire alani: " + daireALan.Hesapla());
     }
   }
 }
