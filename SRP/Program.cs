@@ -6,6 +6,7 @@ namespace SRP
   {
     static void Main(string[] args)
     {
+      double toplamCevre = 0;
       List<Kare> kareList = new List<Kare>()
       {
           new Kare(2),
@@ -13,8 +14,10 @@ namespace SRP
       };
 
       CevreHesapla cevreHesapla = new CevreHesapla(kareList);
-      cevreHesapla.ToplamCevreUzunlugu();
-      cevreHesapla.EkranaYazdir();
+      toplamCevre = cevreHesapla.ToplamCevreUzunlugu();
+
+      CevreYazdir cevreYazdir = new CevreYazdir(toplamCevre);
+      cevreYazdir.EkranaYaz();
     }
   }
 }

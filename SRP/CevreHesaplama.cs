@@ -23,10 +23,5 @@ namespace SRP
 
       return _toplamCevre;
     }
-
-    public void EkranaYazdir()
-    {
-      Console.WriteLine("Sekillerin Toplam Cevresi: " + _toplamCevre);
-    }
   }
 }
