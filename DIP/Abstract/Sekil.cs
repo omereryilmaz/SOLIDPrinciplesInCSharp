@@ -1,7 +1,17 @@
 namespace DIP.Abstract
 {
-  public abstract class Sekil
+  public class Sekil
   {
-    public abstract void SekilCiz();
+    private ISekilCizdir _sekilCizdir;
+    // Injected ISekilCizdir
+    public Sekil(ISekilCizdir sekilCizdir)
+    {
+      _sekilCizdir = sekilCizdir;
+    }
+
+    public void SekilCiz()
+    {
+      _sekilCizdir.SekilCiz();
+    }
   }
 }

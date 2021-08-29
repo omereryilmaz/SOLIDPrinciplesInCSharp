@@ -1,4 +1,5 @@
 ﻿using System;
+using DIP.Abstract;
 
 namespace DIP // Dependency Inversion Principle
 {
@@ -6,10 +7,10 @@ namespace DIP // Dependency Inversion Principle
   {
     static void Main(string[] args)
     {
-      Daire daire = new Daire();
+      Sekil daire = new Sekil(new DaireCizdir());
       daire.SekilCiz();
 
-      Kare kare = new Kare();
+      Sekil kare = new Sekil(new KareCizdir());
       kare.SekilCiz();
     }
   }

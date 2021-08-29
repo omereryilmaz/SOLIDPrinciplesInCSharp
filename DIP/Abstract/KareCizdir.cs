@@ -2,9 +2,9 @@ using System;
 
 namespace DIP.Abstract
 {
-  public class KareCizdir : SekilCizdir
+  public class KareCizdir : ISekilCizdir
   {
-    public override void SekilCiz()
+    public void SekilCiz()
     {
       Console.WriteLine("Kare sekli ciz");
     }
