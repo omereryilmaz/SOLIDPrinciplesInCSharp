@@ -1,13 +1,13 @@
-using System;
 using DIP.Abstract;
 
 namespace DIP
 {
   public class Kare : Sekil
   {
+    KareCizdir kareCizdir = new KareCizdir();
     public override void SekilCiz()
     {
-      Console.WriteLine("Kare sekli ciz");
+      kareCizdir.SekilCiz();
     }
   }
 }
