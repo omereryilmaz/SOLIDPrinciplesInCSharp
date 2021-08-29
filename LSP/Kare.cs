@@ -1,9 +1,16 @@
 namespace LSP
 {
-  public class Kare : Dikdortgen
+  public class Kare : Sekil
   {
-    public Kare(double kenarA) : base(kenarA, kenarA)
+    private double _kenar;
+    public Kare(double kenar)
     {
+      _kenar = kenar;
+    }
+
+    public override double AlanHesapla()
+    {
+      return _kenar * _kenar;
     }
   }
 }
