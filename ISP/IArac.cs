@@ -4,6 +4,5 @@ namespace ISP
   {
     void IleriSur();
     void GeriSur();
-    void OrtalamaYakitTuketimiHesapla();
   }
 }

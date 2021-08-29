@@ -1,8 +1,8 @@
 using System;
 
-namespace ISP
+namespace ISP // Interface Segregation Principle
 {
-  public class Otomobil : IArac
+  public class Otomobil : IArac, IYakit
   {
     public void GeriSur()
     {
